@@ -60,7 +60,8 @@ deploy:
         repository: 821760408-sp/go-wercker-example
         registry: https://registry.hub.docker.com
 
-    - cng/cf-deploy: api: $API
+    - cng/cf-deploy:
+        api: $API
         user: $USER
         password: $PASSWORD
         org: $ORG
